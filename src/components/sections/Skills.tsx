@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { motion } from 'framer-motion';
 import { theme } from '../../styles/theme';
+import { VscAzureDevops } from "react-icons/vsc";
 import { 
   FaReact, 
   FaNodeJs, 
@@ -180,6 +181,7 @@ const skillCategories = [
     skills: [
       // { name: 'Docker', icon: <FaDocker /> },
       { name: 'Git', icon: <FaGitAlt /> },
+      { name: 'Azure DevOps', icon: <VscAzureDevops /> }
       // { name: 'AWS', icon: <FaAws /> },
       // { name: 'CI/CD', icon: <FaDatabase /> },
     ],

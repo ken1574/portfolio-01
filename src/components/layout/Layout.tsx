@@ -160,6 +160,35 @@ const Footer = styled.footer`
   }
 `;
 
+const ResumeButton = styled.a`
+  background: ${theme.colors.accent};
+  color: ${theme.colors.textDark};
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background ${theme.transitions.default}, transform ${theme.transitions.default};
+  box-shadow: 0 2px 8px ${theme.colors.accent}40;
+
+  &:hover {
+    background: ${theme.colors.accent};
+    transform: scale(1.05);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow:
+      0 0 0 2px ${theme.colors.accent}80,
+      0 0 0 4px ${theme.colors.accent}40;
+  }
+
+  @media (max-width: ${theme.breakpoints.sm}) {
+    padding: 4px 12px;
+    font-size: 0.9rem;
+  }
+`;
+
+
 export const Layout = ({ children }: LayoutProps) => {
   useKeyboardNavigation();
 
@@ -196,6 +225,14 @@ export const Layout = ({ children }: LayoutProps) => {
               <a href="#projects" role="listitem" aria-label="Projects section">Projects</a>
               <a href="#skills" role="listitem" aria-label="Skills section">Skills</a>
               <a href="#contact" role="listitem" aria-label="Contact section">Contact</a>
+              <ResumeButton
+                href="/portfolio-01/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View resume PDF"
+              >
+                Resume
+              </ResumeButton>
             </NavLinks>
           </div>
         </Nav>

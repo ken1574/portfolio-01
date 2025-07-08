@@ -183,7 +183,7 @@ const projects = [
   {
     id: 1,
     title: "LearnJapanese",
-    description: "A simple frontend only school project to showcase my past passion.",
+    description: "A simple frontend only individual school project to showcase my past passion. This website is built to guide users on the beginning steps of learning Japanese, solely based on my personal experience.",
     image: LearnJapanese,
     techStack: ["Javascript", "CSS", "HTML"],
     githubUrl: "https://github.com/ken1574/LearnJapanese",
@@ -201,7 +201,7 @@ const projects = [
   {
     id: 3,
     title: "FinSight AI",
-    description: "My contribution as part of a school group project. I created the dashboard and client portfilo pages, powered by Gemini AI.",
+    description: "My contribution as part of a school group project. I created the dashboard and client portfilo pages, powered by Gemini AI. This website aims to bring convenience to the workflow for our client, who is a financial advisor.",
     image: FinTech,
     techStack: ["React", "Express", "SQLite", "MUI", "GeminiAPI"],
     githubUrl: "https://github.com/ken1574/",
